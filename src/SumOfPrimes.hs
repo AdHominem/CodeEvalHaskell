@@ -1,7 +1,3 @@
-module SumOfPrimes where
-
-import System.Environment (getArgs)
-
 isPrime :: Int -> Bool
 isPrime n = n >= 2 && all (\z -> gcd n z == 1) [2..(round $ sqrt $ fromIntegral n)]
 
